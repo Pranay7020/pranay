@@ -1,0 +1,29 @@
+h1 {
+    color: red; /* Pure red color (RGB: 255, 0, 0) */
+}
+
+h2 {
+    color: blue; /* Pure blue color (RGB: 0, 0, 255) */
+}
+
+h3 {
+    color: green; /* Pure green color (RGB: 0, 255, 0) */
+}
+
+h4 {
+    color: rgb(151, 42, 151); /* Custom purple shade (Red: 151, Green: 42, Blue: 151) */
+}
+
+h5 {
+    color: #a45151; /* Hexadecimal color (approx. muted reddish tone) */
+}
+
+h6 {
+    color: rgb(255, 255, 255); /* White color */
+}
+
+p {
+    color: white; /* White text */
+    background-color: black; /* Black background */
+}
+

@@ -1,0 +1,33 @@
+h1 {
+    color: red;
+    text-decoration: underline; /* Underlines the heading (not bold) */
+}
+
+h2 { 
+    color: blue;
+    text-decoration: line-through; /* Adds a line through the text */
+}
+
+h3 {
+    color: green;
+    text-decoration: overline; /* Adds a line above the text */
+}
+
+h4 {
+    color: rgb(57, 9, 57);
+    text-decoration: underline wavy; /* Adds a wavy underline (must specify style) */
+}
+
+h5 {
+    color: #a45151;
+    text-decoration: underline double; /* Adds a double underline */
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-weight: 400; /* Normal text weight */
+}
+
+b {
+    color: rgb(255, 0, 0); /* Bold text in red */
+}

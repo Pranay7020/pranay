@@ -1,0 +1,27 @@
+h1{
+    color: red;
+    font-weight: bold; /* Makes the heading bold */
+}
+h2{ 
+    color: blue;
+font-weight: normal;
+}
+h3{
+    color: green;
+    font-weight: bolder; /* Makes the heading bold */
+}
+h4{
+    color: rgb(57, 9, 57);
+    font-weight: lighter; /* Makes the heading lighter */
+}
+h5{
+    color: #a45151;
+    font-weight: 100; /* Sets the heading to a very light weight */
+}
+p{
+    color: rgb(0, 0, 0);
+   font-weight: 400; /* Normal weight for paragraph text */
+}
+b{
+    color: rgb(255, 0, 0); /* Bold text in red */
+}

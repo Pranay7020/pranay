@@ -1,0 +1,27 @@
+h1{
+    color: red;
+    text-align: center; /* Center-aligns the heading */
+}
+h2{ 
+    color: blue;
+text-align: left; /* Left-aligns the heading */
+}
+h3{
+    color: green;
+    text-align: right; /* Right-aligns the heading */
+}
+h4{
+    color: rgb(57, 9, 57);
+    text-align: justify; /* Justifies the heading text */
+}
+h5{
+    color: #a45151;
+    text-align: end; /* Center-aligns the heading */
+}
+p{
+    color: rgb(0, 0, 0);
+    text-align: start; /* Left-aligns the heading */
+}
+b{
+    color: rgb(255, 0, 0); /* Bold text in red */
+}
