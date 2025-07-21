@@ -1,0 +1,46 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #b92b27; /* Underlines the heading */
+}
+
+#login {
+    color: black;
+    border: 1px solid white; /* Adds a border around the element */
+    /* This is an ID selector */
+}
+
+#signup {
+    color: white;
+    background-color: #b92b27  ; /* Sets a light gray background */
+    border: 1px solid black; /* Adds a border around the element */
+}
+
+.upvote {
+    background-color: green;
+    border: 1px solid black;
+    font-weight: bolder; /* Makes the text bold */ 
+    /* This is a class selector */
+}
+
+.answer {
+    background-color: black;
+    /*  */
+    color: white; /* Makes the text visible on black background */
+    /* This is a class selector */
+}
+p a {    color:purple; /* Sets the link color to blue */ 
+    /* desedent selector */
+    text-decoration: none; /* Removes underline from links */
+}
+p+h3{
+    color: blue; /* Sets the color of h3 that follows a p */
+    font-weight: bold; /* Makes the text bold */
+/* adjecent sibiling combinator */
+}
+div>input{
+ background-color:rgb(139, 116, 82); /* Setbs the color of input text */ 
+
+}

@@ -1,0 +1,9 @@
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    /* Sets the font family for the div */
+    color: brown;
+}
+.line-height-example {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Example of a different font family */
+    color: navy;
+}
