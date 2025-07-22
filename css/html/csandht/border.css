@@ -1,0 +1,11 @@
+div{
+    border-width: 20px;  /* Thicker border */
+    border-style: solid; /* Dotted border style */
+    border-color: #0000ff; /* Blue border */
+    /*  */
+}
+/* writen type 2 */
+div{
+    border: 20px solid #0000ff; /* Thicker blue border */
+    /* border-width/style/color */
+}

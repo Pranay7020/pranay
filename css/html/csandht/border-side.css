@@ -1,0 +1,30 @@
+div {
+  border-left: 20px dashed red;        /* Thicker red left border */
+  border-right: 20px dotted purple;    /* Thicker purple right border */
+  border-top: 20px solid #0000ff;      /* Thicker blue top border */
+  border-bottom: 20px solid green;     /* Corrected from "disabled" to "solid" */
+}
+
+/* CSS supports the following border styles:
+
+solid
+
+dashed
+
+dotted
+
+double
+
+groove
+
+ridge
+
+inset
+
+outset
+
+none
+
+hidden
+
+ */
