@@ -1,0 +1,24 @@
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div {
+    box-shadow: 5px 5px 15px rgba(0, 0, 255, 0.5); /* Smoother blue shadow */
+    width: 300px;
+    height: 300px;
+    background-color: #ff0000;
+}
+
+img {
+    height: 390px;
+    width: 590px;
+    background: #ff0000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 255, 0.5); /* Smoother blue shadow */
+}
+
+h1 {
+    text-shadow: 2px 2px 8px rgba(0, 106, 255, 0.7); /* Blue text shadow */
+}

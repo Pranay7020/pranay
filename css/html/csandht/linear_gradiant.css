@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color: black; /* Sets default text color */
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right,red,blue,green); /* Creates a linear gradient background */
+    -webkit-background-clip: text; /* Safari/Chrome support */
+    -webkit-text-fill-color: transparent; /* Makes text transparent to show gradient */
+}
+
+.container {
+    margin-top: 300px;
+    background: linear-gradient(to right bottom, #8B0000, #FF4500, #FFD700); /* Deeper flame gradient */
+    padding: 40px;
+    color: #F5F5F5;} 
+    /* Ash white text */
+
+/* this is conical gradiant */
+    .radial {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #FF4500, #FFD700, #8B0000); /* Radial gradient for a flame effect */
+    border:2px solid black /* Makes it circular */
+  margin-top: 300px; /* Centers the div vertically */
+
+    margin-left: 600px; /* Centers the div */
+    }
+
+    .conic{
+        margin-left: 600px;
+        margin-top: 300px;
+        width: 200px;
+        height: 200px;
+        background: conic-gradient(red,yellow,green,blue,red ); /* Conical gradient for a flame effect */
+        border: 2px solid black; /* Makes it circular */
+        border-radius: 50%; /* Ensures the div is circular */
+    }

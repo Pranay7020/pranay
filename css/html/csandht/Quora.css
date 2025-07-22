@@ -7,9 +7,9 @@ h1 {
 }
 
 #login {
-    color: black;
+    color: black;**
     border: 1px solid white; /* Adds a border around the element */
-    /* This is an ID selector */
+ *   /* This is an ID selector */
 }
 
 #signup {
@@ -32,7 +32,7 @@ h1 {
     /* This is a class selector */
 }
 p a {    color:purple; /* Sets the link color to blue */ 
-    /* desedent selector */
+   /* desedent selector */
     text-decoration: none; /* Removes underline from links */
 }
 p+h3{
@@ -41,6 +41,6 @@ p+h3{
 /* adjecent sibiling combinator */
 }
 div>input{
- background-color:rgb(139, 116, 82); /* Setbs the color of input text */ 
+ background-color:rgb(139, 116, 82); /* Setbs the color of input text */ /
 
 }
