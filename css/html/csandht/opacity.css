@@ -1,0 +1,14 @@
+div{
+    height: 200;
+    width: 200;
+    background-color: rgba(255, 0, 0,1);
+    text-align: center;
+    /* this is alpha, range 0 to 1 , ang this affect on only color */
+}
+#id{
+    height: 200;
+    width: 200;
+    background-color: blue;
+  opacity:0.3 ;
+/* this is opacity use for all block and color make visible or not ,range 0 to 1  */
+}
