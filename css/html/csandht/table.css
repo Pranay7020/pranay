@@ -1,0 +1,15 @@
+ table{
+    border:10px outset;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    table-layout: fixed;
+    border:ou ;
+
+}
+th{
+    background-color: #5cb9e4;
+    padding: 8px;
+
+
+}
