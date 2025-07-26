@@ -11,7 +11,7 @@ h1 {
     font-weight: 600;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right,red,blue,green); /* Creates a linear gradient background */
+    background: linear-gradient(to bottom right,red,blue,green); /* Creates a linear gradient background */
     -webkit-background-clip: text; /* Safari/Chrome support */
     -webkit-text-fill-color: transparent; /* Makes text transparent to show gradient */
 }
@@ -42,4 +42,46 @@ h1 {
         background: conic-gradient(red,yellow,green,blue,red ); /* Conical gradient for a flame effect */
         border: 2px solid black; /* Makes it circular */
         border-radius: 50%; /* Ensures the div is circular */
-    }
+    }* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color: black; /* Sets default text color */
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, red, blue, green); /* Creates a linear gradient background */
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    -webkit-text-fill-color: transparent; /* Makes text transparent to show gradient */
+}
+
+.container {
+    margin-top: 300px;
+    background: linear-gradient(to right bottom, #8B0000, #FF4500, #FFD700); /* Flame-like gradient */
+    padding: 40px;
+    color: #F5F5F5; /* Ash white text */
+}
+
+/* Radial Gradient Box */
+.radial {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #FF4500, #FFD700, #8B0000); /* Flame effect */
+    border: 2px solid black;
+    margin: 300px auto 0; /* Vertically top margin + horizontally center */
+}
+
+/* Conic Gradient Circle */
+.conic {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(red, yellow, green, blue, red); /* Flame ring */
+    border: 2px solid black;
+    border-radius: 50%; /* Makes it circular */
+    margin: 300px auto 0;
+}
