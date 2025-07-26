@@ -24,6 +24,7 @@ h2 {
 }
 .rotateX:hover {
   transform: rotateX(360deg);
+  
 }
 .rotateY:hover {
   transform: rotateY(360deg);
