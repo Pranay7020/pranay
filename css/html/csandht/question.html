@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Questions and Answers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>📘 HTML Questions and Answers</h2>
+
+  <div class="qa">
+    <div class="question" onclick="toggleAnswer(this)">Q1: What is HTML?</div>
+    <div class="answer">A: HTML stands for HyperText Markup Language. It is used to create the structure of web pages.</div>
+  </div>
+
+  <div class="qa">
+    <div class="question" onclick="toggleAnswer(this)">Q2: What is the use of &lt;img&gt; tag?</div>
+    <div class="answer">A: The &lt;img&gt; tag is used to display images in HTML documents.</div>
+  </div>
+
+  <div class="qa">
+    <div class="question" onclick="toggleAnswer(this)">Q3: What are HTML attributes?</div>
+    <div class="answer">A: Attributes provide additional information about HTML elements, like `href` in &lt;a&gt; tag.</div>
+  </div>
+
+  <script>
+    function toggleAnswer(element) {
+      const answer = element.nextElementSibling;
+      answer.style.display = answer.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
