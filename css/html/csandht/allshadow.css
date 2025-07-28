@@ -1,0 +1,31 @@
+/* Global reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Drop shadow on all images */
+img {
+  width: 390px;
+  height: 300px;
+  filter: drop-shadow(10px 10px 150px blue);
+  margin: 40px;
+}
+
+/* Box shadow specifically for images inside .div-shadow */
+.div-shadow > img {
+  box-shadow: 10px 10px 150px 90px green;
+}
+
+/* Text shadow styling */
+h1 {
+  text-shadow: -1px 1px 20px #000;
+  margin: 180px;
+  padding: 20px;
+}
+
+/* Visual border for the body (for testing layout) */
+body {
+  border: 2px solid red;
+}
