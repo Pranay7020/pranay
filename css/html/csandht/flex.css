@@ -23,5 +23,10 @@ border: 5px solid red;
     height: inherit;
     justify-content: center;
     align-items: center;
-    
+
+}
+.child1,child2
+{
+
+
 }
