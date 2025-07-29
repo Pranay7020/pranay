@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+height: 100vh;
+border: 5px solid red;
+ 
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    text-align: center;
+    line-height: 100px;
+}
+.container{
+    /* flex */
+    border: 4px solid greenyellow;
+    display: flex;
+    gap: 19px;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    
+}
