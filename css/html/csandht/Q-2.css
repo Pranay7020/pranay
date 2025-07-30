@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.box {
+  width: 500px;
+  height: 400px;
+  background-color: #002d8e; /* or any color you want */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+
+.small {
+    width: 60px;
+    height: 100px;
+}
+
+.medium {
+    width: 200px;
+    height: 100px;
+}
+
+.large {
+    width: 400px;
+    height: 100px;
+}
