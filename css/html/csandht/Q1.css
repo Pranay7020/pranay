@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "word-6 word-5 word-2 word-10"
+    "word-4 word-8 word-3 ."
+    "word-7 word-1 word-9 .";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  height: auto;
+  width: 1000px;
+  background-color: white;
+  margin: 150px auto;
+  padding: 20px;
+  border: solid black;
+}
+
+.word {
+  width: 200px;
+  height: 70px;
+  background-color: rgb(24, 75, 162);
+  border: none;
+  border-radius: 15%;
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.word-1 { grid-area: word-1;
+width: 200px;
+  height: 70px; }
+.word-2 { grid-area: word-2; }
+.word-3 { grid-area: word-3; }
+.word-4 { width: 300px;
+height: 70px;
+  grid-area: word-4; }
+.word-5 { grid-area: word-5; }
+.word-6 { grid-area: word-6; }
+.word-7 { grid-area: word-7; }
+.word-8 { grid-area: word-8; }
+.word-9 { grid-area: word-9; }
+.word-10 { grid-area: word-10; }
