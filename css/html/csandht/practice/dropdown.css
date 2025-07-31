@@ -1,0 +1,31 @@
+fieldset {
+  border: 2px solid blue;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+legend {
+  color: blue;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+/* Custom hover (note: works only when dropdown is open in some browsers) */
+option:hover {
+  background-color: blue;
+  color: white; 
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
