@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.icon,
+.iconic {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-center input {
+  width: 400px;
+  height: 32px;
+  padding: 4px 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
