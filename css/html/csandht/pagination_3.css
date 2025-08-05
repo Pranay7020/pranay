@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  flex-direction: column;
+  background-color: #f5f5f5; /* Optional for contrast */
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  flex-wrap: wrap; /* Optional: allows wrapping on smaller screens */
+}
+
+p {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 5%; 
+  background-color: chocolate;
+  color: white;
+  transition: 0.3s;
+}
+
+p:hover {
+  background-color: brown;
+}
+
+.pranay,
+.shinde {
+  width: 150px;
+  height: 80px;
+  background-color: darkorange;
+}
