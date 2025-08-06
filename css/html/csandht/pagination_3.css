@@ -12,10 +12,10 @@ html, body {
 
 body {
   display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;     /* center vertically */
+  justify-content: center;
+  align-items: center;     
   flex-direction: column;
-  background-color: #f5f5f5; /* Optional for contrast */
+  background-color: #f5f5f5; 
 }
 
 .numbers {
@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px; 
-  flex-wrap: wrap; /* Optional: allows wrapping on smaller screens */
+  flex-wrap: wrap; 
 }
 
 p {

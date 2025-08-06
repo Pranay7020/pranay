@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   cursor: pointer;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -15,26 +16,24 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 70px;
+  /* gap: 70px; */
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   height: 40vh;
+  margin: auto;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .left_arrow,
 .right_arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px; /* smaller size */
-
+  width: 33%;
+  text-align: left;
 }
 
 .right_arrow {
@@ -45,16 +44,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Equal spacing between numbers */
+  gap: 20px;
+  width: 33%;
 }
 
 p {
   width: 80px;
   height: 80px;
   text-align: center;
-  line-height: 80px; /* vertical centering */
+  line-height: 80px;
   font-size: 30px;
-  border-radius: 50%; /* Makes it a circle */
+  border-radius: 50%;
   border: 2px solid black;
   transition: all 0.3s ease-in-out;
 }
@@ -73,7 +73,13 @@ svg {
   height: 80px;
   width: 80px;
   border: 2px solid black;
+  font-size: 20px;
+  /* padding: 0 20px; */
 }
+path{
+  width: 100%;
+}
+
 
 svg:hover {
   filter: drop-shadow(10px 10px 150px #211f23);
@@ -82,5 +88,5 @@ svg:hover {
   background-color: rgb(84, 84, 255);
   transition: all 0.3s ease-out;
   transform: scale(1.1);
-border: 2px solid black;
+  border: 2px solid black;
 }
