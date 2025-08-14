@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #EFEFED;
+}
+
+.box-1 {
+    background: #9d9d64;
+    width: 100%;
+    height: 87vh;
+    border-radius: 25px;
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
+  background-color: #EFEFED;
+}
+.nav-left,
+.nav-right {
+    padding-left: 10px;
+    padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.button-1,
+.button-2 {
+    background-color: azure;
+    border-radius: 25%;
+    border:none;
+}
+.nav-right{
+  margin-left: auto;
+}
+.profile-pic-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    inset-inline: center;
+}
+.profile-pic{
+    margin-top:  50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h4{
+    margin: 100px;
+    background-color: aliceblue;
+    position: fixed;
+}
+.experience{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.button-2 {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color:black;
+    border-radius: 25%;
+    color: white;
+    border: none;
+    font-size: medium;
+}
