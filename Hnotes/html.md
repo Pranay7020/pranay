@@ -259,9 +259,6 @@ CSS – Cascading Style Sheets
 
 JS – JavaScript
 
-
-
-
 # <span style="color:blue">Form Tag</span>
 
 - <span style="color:red">The tag is used to collect user input.</span>
