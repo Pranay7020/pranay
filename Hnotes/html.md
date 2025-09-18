@@ -288,8 +288,193 @@ JS – JavaScript
 </form>
 ```
 ## <span style="color:blue">Common Input Types</span>
+``` html 
+<input type="text">       → Single line text  
+<input type="password">   → Password field  
+<input type="email">      → Email input  
+<input type="number">     → Numeric input  
+<input type="radio">      → Radio button (choose one)  
+<input type="checkbox">   → Checkbox (multiple choice)  
+<input type="date">       → Date picker  
+<input type="file">       → File upload  
+<input type="submit">     → Submit button  
+<input type="reset">      → Reset button  
+``` 
+## <span style="color:blue">action</span>
+The action attribute specifies the URL where the form data should be sent after submission.
+
+``` html
+<form action="/submit.php" method="POST">
+</form>
+```
+## <span style="color:blue">method</span>
+
+The method attribute defines how data is sent. The two most common methods are GET and POST.
+
+``` html
+<form action="/submit.php" method="POST">
+</form>
+```
+## <span style="color:blue">name</span>
+
+The name attribute specifies the name for the form element, making it easier to reference in scripts or the server-side code.
+
+``` html
+<input type="text" name="username">
+```
+
+## <span style="color:blue">placeholder</span>
+This attribute provides a hint to the user as to what can be entered in the field.
+
+``` html
+<input type="text" placeholder="Enter your username">
+``` 
+## <span style="color:blue">required
+</span>
+The required attribute makes a field mandatory to fill out.
+
+``` html
+<input type="text" required>
+```
+## <span style="color:blue">autofocus
+<span>
+The autofocus attribute automatically focuses the cursor on the particular input when the page loads.
+
+``` html
+<input type="text" autofocus>
+```
+
+# <span style="color:blue">HTML Elements: Inline vs Block</span>
+
+# <span style="color:pink">🔹 Block Elements</span>
+
+- <span style="color:red">Always start on a new line.</span>
+
+- <span style="color:red">Take up the full width available (stretch across the page).</span>
+
+- <span style="color:red">Can contain other block and inline elements.</span>
+
+- <span style="color:red">Examples: (div), (p), (h1 to h6), (table), (ul), (ol).</span>
+
+``` html
+<p>This is a paragraph (block element).</p>
+<div>This is a div (block element).</div>
+<h1>This is a heading (block element).</h1>
+```
+👉 Output:
+
+Each element starts on a new line and takes the full width
+
+## <span style="color:pink">🔹 Inline Elements</span>
+
+- <span style="color:red">Do not start on a new line.</span>
+
+- <span style="color:red">Take only as much width as necessary.</span>
+
+- <span style="color:red">Usually used for formatting small parts of text.</span>
+
+- <span style="color:red">Examples: (span), (a), (img), (strong), (input).</span>
+  
+  👉 Output:
+
+- Inline elements stay in the same line with text.
 
 
+
+## <span style="color:blue">🎵 Audio Tag</span>
+
+- <span style="color:red">The (audio)  tag is used to embed sound/audio content in a web page.</span>
+
+- <span style="color:red">It is a media tag introduced in HTML5.</span>
+
+- <span style="color:red">The controls attribute adds play, pause, and volume options.</span>
+
+- <span style="color:red">The autoplay attribute makes the audio play automatically (not recommended in all browsers).</span>
+
+- <span style="color:red">The loop attribute makes the audio repeat again and again.</span>
+
+``` html 
+<audio controls>
+  <source src="song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+👉 Attributes:
+
+controls → shows play/pause/volume buttons
+
+autoplay → plays automatically
+
+loop → repeats audio
+
+muted → starts with sound off
+
+##  <span style="color:blue">🎥 Video Tag</span>
+
+- <span style="color:red">The (video) tag is used to embed video content in a web page.</span>
+
+- <span style="color:red">It is also a media tag introduced in HTML5.</span>
+
+- <span style="color:red">The controls attribute adds play, pause, and volume options.</span>
+
+- <span style="color:red">The width and height attributes define the video size.</span>
+
+-  <span style="color:red">The poster attribute sets a preview image before the video starts.</span>
+``` html
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+```
+
+👉 Attributes:
+
+controls → shows play/pause/volume buttons
+
+autoplay → plays automatically
+
+loop → repeats video
+
+muted → starts with sound off
+
+poster → shows an image before the video starts
+
+## <span style="color:blue">🔹 HTML Special Entities</span>
+
+- <span style="color:red">Special characters in HTML cannot be written directly (like <, >, &, etc.).</span>
+
+- <span style="color:red">We use HTML entities to display such symbols.</span>
+
+- <span style="color:red">An HTML entity begins with & and ends with ;.</span>
+
+- <span style="color:red">Entities are used for reserved characters, currency symbols, math symbols, and more.</span>
+
+  ### <span style="color:pink">✅ Commonly Used Entities</span>
+
+
+|Symbol | Entity Code  |Description                      |
+| ------ | ----------- | -------------------------------- |
+| <      | `&lt;`      | Less than `<`                    |
+| >      | `&gt;`      | Greater than `>`                 |
+| &      | `&amp;`     | Ampersand `&`                    |
+| "      | `&quot;`    | Double Quote `"`                 |
+| '      | `&apos;`    | Single Quote `'`                 |
+| ©      | `&copy;`    | Copyright ©                      |
+| ®      | `&reg;`     | Registered ®                     |
+|        | `&nbsp;`    | Non-breaking space (extra space) |
+| ¢      | `&cent;`    | Cent ¢                           |
+| £      | `&pound;`   | Pound £                          |
+| ¥      | `&yen;`     | Yen ¥                            |
+| €      | `&euro;`    | Euro €                           |
+| ♥      | `&hearts;`  | Heart ♥                          |
+
+
+
+
+ 
+ 
+ 
 
 
 
