@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   #joke{
+    border: 2px solid rgb(255, 0, 0);
+    padding: 20px 10px;
+    margin: 20px 10px; 
+   }
+</style>
+<body>
+   <p>hello everyone . how are you</p>
+   <button onclick="getJoke()">Get a joke</button>
+   <div id="joke"></div>  <!-- ✅ only one ID -->
+   <button onclick="generator()">generate</button>
+</body>
+<script>
+const infofunc=()=>{
+ let information =document.getElementsByTagName("p")[0].innerText;
+ console.log(information);
+}
+
+const generator = async () => {
+    try {
+        const API = await fetch("https://sv443.net/jokeapi/v2/joke/Any");
+        const data = await API.json();
+        console.log(data);
+
+        const jokeDive=document.getElementById("joke");
+        jokeDive.innerHTML = "";  // clear previous jokes
+
+        let id=document.createElement("h3");
+        let setup=document.createElement("h5");
+        let punchline=document.createElement("h4");
+        let type=document.createElement("p");
+
+        id.innerText = data.id || "No ID";
+        setup.innerText = data.setup || data.joke || "No setup";
+        punchline.innerText = data.delivery || data.punchline || "";
+        type.innerText = data.type;
+
+        jokeDive.append(id,setup,punchline,type);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+</script>
+</html>

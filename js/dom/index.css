@@ -1,0 +1,38 @@
+/* Main container as grid */
+#maincontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+    gap: 20px; /* space between boxes */
+    padding: 20px;
+    justify-items: center; /* center cards inside grid */
+}
+
+/* Card style */
+.card_div {
+    width: 300px; 
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: center; /* center text inside card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card image */
+.card_div img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Text spacing */
+.card_div h5,
+.card_div h3,
+.card_div h4,
+.card_div p {
+    margin: 6px 0;
+}
+.hovered {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
