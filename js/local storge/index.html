@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalStorage Example</title>
+</head>
+<body>
+  <input type="text" id="myInput" placeholder="Enter some text">
+  <button id="Btn" onclick="LS_insert()">Add to LS</button>
+
+  <div class="LS"></div>
+
+  <script>
+    let ls = document.querySelector(".LS");
+
+    function LS_insert() {
+      let input = document.getElementById("myInput").value; // get value at click time
+      localStorage.setItem("input", input);
+      render_UI();
+    }
+
+    function render_UI() {
+      let value = localStorage.getItem("input");
+      ls.innerHTML = `<p>${value}</p>`;
+    }
+
+    render_UI();
+  </script>
+</body>
+</html>

@@ -2,8 +2,8 @@
 #maincontainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
-    gap: 20px; /* space between boxes */
-    padding: 20px;
+    gap: 10px; /* space between boxes */
+    padding: 10px;
     justify-items: center; /* center cards inside grid */
 }
 
