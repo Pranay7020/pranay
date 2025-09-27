@@ -15,6 +15,7 @@
     let ls = document.querySelector(".LS");
 
     function LS_insert() {
+      let input = document.getElementById("myInput").value; 
       localStorage.setItem("input", input);
       render_UI();
     }

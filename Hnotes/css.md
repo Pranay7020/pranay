@@ -74,3 +74,5 @@ p {
 👉 Output:
 
 All (p) text will be green with font size 22px.
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Drag and Drop</h1>
+    <div id="dragme" draggable="true" style="width:100px; height:100px; background-color:rgb(255, 0, 0);"></div>
+    <div id="dropzone" style="width:300px; height:300px; border:2px dashed rgb(0, 255, 0); margin-top:20px;"></div>
+</body>
+</html>
+
+<script>
+    const dragme = document.getElementById("dragme");
+    const drop = document.getElementById("dropzone");
+
+    dragme.ondragstart = (e)=>{
+if(dragme.getAttribute("draggable") === "false"){
+e.preventDefault();
+return false;
+}
+e.dataTransfer.setData("text", e.target.id);
+    };
+   
+    drop.ondragover = (e)=>  e.preventDefault();
+    
+        drop.ondrop = (e)=>{
+            e.preventDefault();
+            let data = e.dataTransfer.getData("text");
+            let value= document.getElementById(data);
+            dropzone.appendChild(value);
+        };
+        </script>
