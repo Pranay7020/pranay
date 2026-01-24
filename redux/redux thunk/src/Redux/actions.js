@@ -1,11 +1,11 @@
-import axios from 'axios';
-import * as types from './actionTypes';
+import axios from "axios";
+import * as types from "./actionTypes";
 
 export const getTodos = () => (dispatch) => {
   dispatch({ type: types.GET_TODOS_REQUEST });
 
   axios
-    .get('http://localhost:8080/todos')
+    .get("http://localhost:8080/todos")
     .then((res) => {
       dispatch({
         type: types.GET_TODOS_SUCCESS,
@@ -21,7 +21,7 @@ export const addTodo = (title) => (dispatch) => {
   dispatch({ type: types.ADD_TODO_REQUEST });
 
   axios
-    .post('http://localhost:8080/todos', {
+    .post("http://localhost:8080/todos", {
       title,
       status: false,
     })
