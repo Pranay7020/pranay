@@ -1,31 +1,25 @@
 import { useState } from "react";
-import { useLocalStorage } from "./Hook/useLocalStorage.js";
+import { useToggle } from "./Hook/useToggle";
 
 function App() {
-  const [input, setInput] = useState("");
-  const [names, setNames] = useLocalStorage("names", []);
-
-  const addName = () => {
-    if (input.trim() === "") return;
-    setNames([...names, input]); // ✅ ADD TO ARRAY
-    setInput("");
-  };
+  const [string, setString] = useState("");
+  const [toggle, setToggle] = useToggle(false);
 
   return (
     <>
       <input
         type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
+        placeholder="Type something..."
+        onChange={(e) => setString(e.target.value)}
       />
 
-      <button onClick={addName}>Add</button>
+      <p>{string}</p>   {/* 👈 now string is USED */}
 
-      <ul>
-        {names.map((name, index) => (
-          <li key={index}>{name}</li>
-        ))}
-      </ul>
+      {toggle && <h1>I am invoked</h1>}
+
+      <button onClick={() => setToggle(false)}>OFF</button>
+      <button onClick={() => setToggle(true)}>ON</button>
+      <button onClick={() => setToggle()}>TOGGLE</button>
     </>
   );
 }
